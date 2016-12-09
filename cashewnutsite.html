@@ -471,3 +471,276 @@ function mylinkfunction(e) {
 </script>
 </body>
 </html>				
+
+	
+	
+//Android
+activity_main.xml
+	<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bdc3c7"
+    android:weightSum="1"
+    android:text="@string/app_name"
+    >
+
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:text="@string/hi"
+        android:layout_margin="50dp"
+        android:textAlignment="center"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:textSize="20dp"
+
+        android:lineSpacingExtra="30sp"
+        android:textStyle="normal|bold"
+        android:layout_weight="0.15" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/openbutton"
+        android:backgroundTint="@color/colorPrimary"
+        android:elevation="12dp"
+        android:visibility="visible"
+        android:text="@string/butoname"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark" />
+
+</LinearLayout>
+	
+	
+	
+	
+//contact_page.xml
+	<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bdc3c7"
+    android:weightSum="1"
+    android:text="@string/con_list"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi1"
+        android:textSize="50sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi2"
+        android:textSize="50sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi3"
+        android:textSize="50sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi4"
+        android:textSize="50sp"/>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:text="@string/hi5"
+        android:textSize="50sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi6"
+        android:textSize="50sp"/>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:text="@string/hi7"
+        android:textSize="50sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi8"
+        android:textSize="50sp"/>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:text="@string/hi9"
+        android:textSize="50sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi10"
+        android:textSize="50sp"/>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+	
+//colors.xml
+	<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c3e50</color>
+    <color name="colorPrimaryDark">#f5f3f3</color>
+    <color name="colorAccent">#0006F7</color>
+</resources>
+
+//dimens.xml
+	
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>
+
+//strings.xml
+	
+	<resources>
+    <string name="app_name">My Contacts</string>
+    <string name="hi">One tap to stay in touch</string>
+    <string name="butoname">Open Contacts</string>
+    <string name="con_list">Contact list</string>
+    <string name="hi1">Text 1</string>
+    <string name="hi2">Text 2</string>
+    <string name="hi3">Text 3</string>
+    <string name="hi4">Text 4</string>
+    <string name="hi5">Text 5</string>
+    <string name="hi6">Text 6</string>
+    <string name="hi7">Text 7</string>
+    <string name="hi8">Text 8</string>
+    <string name="hi9">Text 9</string>
+    <string name="hi10">Text 10</string>
+
+
+</resources>
+
+	
+	
+//styles.xml
+	
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+    <style name="Contheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+
+</resources>
+
+	
+//AndroidManifest.xml
+
+	<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.manasa_pt1119.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        >
+        <activity android:name="com.example.manasa_pt1119.myapplication.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.manasa_pt1119.myapplication.Contact"  >
+
+        </activity>
+    </application>
+
+</manifest>
+
+	
+//Contact.java
+	
+	package com.example.manasa_pt1119.myapplication;
+
+/**
+ * Created by manasa-pt1119 on 09/12/16.
+ */
+import android.os.Bundle;
+
+import android.support.v7.app.AppCompatActivity;
+
+
+public class Contact extends AppCompatActivity {
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.contact_page);
+    }
+
+}
+
+//MainApplication.java
+	
+package com.example.manasa_pt1119.myapplication;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+
+
+
+public class MainActivity extends AppCompatActivity {
+
+    Button ct;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        ct=(Button)(findViewById(R.id.openbutton));
+        ct.setOnClickListener( new OnClickListener()
+        {
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+                Intent myIntent = new Intent(MainActivity.this,
+                        Contact.class);
+                startActivity(myIntent);
+            }
+
+
+        });
+
+
+    }
+
+}
+
+	
